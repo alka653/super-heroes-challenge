@@ -1,0 +1,19 @@
+<h3>
+  Tour de heroes ({{list_super_heroes.length}})
+</h3>
+<app-search></app-search>
+<div class="row align-items-center">
+  <div class="col-md-4 mb-1" *ngFor="let heroe of list_super_heroes">
+    <div class="card">
+      <div class="card-header">
+        <b>{{heroe.nombre}}</b>
+      </div>
+      <div class="card-body">
+        <img class="img-fluid" [src]="heroe.url_foto" [attr.alt]="heroe.nombre">
+        <button class="btn btn-block btn-danger mt-2" (click)="eliminarHeroe(heroe.id)">
+          Eliminar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

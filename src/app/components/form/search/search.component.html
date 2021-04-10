@@ -1,0 +1,8 @@
+<form class="form-inline" [formGroup]="searchForm" (ngSubmit)="buscarHeroe()">
+  <div class="form-group mb-2">
+    <input type="text" class="form-control" id="filter" name="filter" formControlName="filter" placeholder="Buscar heroe...">
+  </div>
+  <button type="submit" class="btn btn-info mb-2">
+    Buscar
+  </button>
+</form>
